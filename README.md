@@ -23,4 +23,4 @@ Training Model: <br/>
 *	2880 images were used for training and 1920 images for testing.
 *	The full resolution 1920x1440 images were randomly cropped into images of size 512x512.
 ## Results ##
-![Input Image]()
+![Cancer Cell Image](https://github.com/deepanshi-s/Bladder-Cancer-Cell-Prediction/blob/master/Images/image.png)
