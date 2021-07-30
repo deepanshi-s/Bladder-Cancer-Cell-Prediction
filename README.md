@@ -36,3 +36,10 @@ Training Model: <br/>
 * View Important Info tab - Enables user to view the Jaccard Score, F1 Score and the KI index.
 
 ![Segmented Image](Images/Screenshot%20(32).png "GUI")
+
+ ## **Directions to use** ##
+* Change the paths in the train.py and test.py file to the train and test directory.
+* The train directory should have images in the format train/img/img/1,2,3... and train/mask/mask/1,2,3... Similarly for the test directory, test/img/img/1,2,3... and test/mask/mask/1,2,3..
+* The generator class in keras requires the images to be in a subfolder inside the main folder (i.e img/img).
+* You can try different segmentation models instead of UNET. Import the model code in the train.py and test.py
+
