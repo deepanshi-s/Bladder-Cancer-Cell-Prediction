@@ -23,4 +23,16 @@ Training Model: <br/>
 *	2880 images were used for training and 1920 images for testing.
 *	The full resolution 1920x1440 images were randomly cropped into images of size 512x512.
 ## Results ##
-![Segmented Image](Images/first.png "Text to show on mouseover").
+![Segmented Image](Images/first.png "Results")
+| Model      | Precision | Recall | F1 score | IOU Score |
+| ---------  | --------  | ------ | -------- | --------- |
+| UNET       | 0.9599    | 0.9599 | 0.9599   | 0.9230    |
+ 
+ ## **Graphical User Interface** ##
+ * We developed a custom graphical user interface to select a tissue image and segment the image accordingly. 
+ * The GUI was made using tKinter, a python library.
+ * The GUI has 2 Buttons, 2 Image display units and a text box.
+ * Select Image button - Enables user to browse and select directory of choice which contains images for testing. Predict - Runs the trained UNET architecture in background to generate the segmented map of the tissue image.
+* View Important Info tab - Enables user to view the Jaccard Score, F1 Score and the KI index.
+
+![Segmented Image](Images/gui.png "GUI")
