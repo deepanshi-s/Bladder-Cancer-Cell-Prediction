@@ -37,6 +37,12 @@ Training Model: <br/>
 
 ![Segmented Image](Images/Screenshot%20(32).png "GUI")
 
+## **Requirements** ##
+Python 3
+CUDA >= 8.0
+Tensorflow >= 2.0
+
+
  ## **Directions to use** ##
 * Change the paths in the train.py and test.py file to the train and test directory.
 * The train directory should have images in the format train/img/img/1,2,3... and train/mask/mask/1,2,3... Similarly for the test directory, test/img/img/1,2,3... and test/mask/mask/1,2,3..
