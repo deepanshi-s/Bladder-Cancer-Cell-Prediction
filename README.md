@@ -35,4 +35,4 @@ Training Model: <br/>
  * Select Image button - Enables user to browse and select directory of choice which contains images for testing. Predict - Runs the trained UNET architecture in background to generate the segmented map of the tissue image.
 * View Important Info tab - Enables user to view the Jaccard Score, F1 Score and the KI index.
 
-![Segmented Image](Images/gui.png "GUI")
+![Segmented Image](Images/Screenshot (32).png "GUI")
