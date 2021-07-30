@@ -9,7 +9,7 @@ import os
 import subprocess
 import time
 
-head1="C:\\Users\\Deepanshi\\Desktop\\gui\\unet_final"
+head1="unet_final"                     #add location of code folder
 def select_image():
         global path 
         path = filedialog.askopenfilename()
@@ -64,7 +64,7 @@ def run():
         args = ["predict.py"]
         args.extend("--image".split())
         args.extend(path.split())
-        args.extend("--checkpoint_path checkpoints/latest_model_MobileUNet_CamVid.ckpt --model MobileUNet".split())
+        args.extend("--checkpoint_path checkpoints/latest_model_MobileUNet_CamVid.ckpt --model MobileUNet".split())   #add path of the checkpoints
         subprocess.Popen(['python'] + args)
         time.sleep(25)
 
@@ -76,7 +76,7 @@ btn = Button(root, text="Select an image", command=select_image,width=20)
 btn.pack()
 panelC=Label(root,text="Metrics here",font=40)
 panelC.pack(side="left")
-fo = open("C:\\Users\\Deepanshi\\Desktop\\gui\\unet_final\\out.txt", "r")
+fo = open("out.txt", "r")
 line = fo.read()
 panelC.configure(text=line)
 root.mainloop()
