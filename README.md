@@ -38,9 +38,9 @@ Training Model: <br/>
 ![Segmented Image](Images/Screenshot%20(32).png "GUI")
 
 ## **Requirements** ##
-Python 3
-CUDA >= 8.0
-Tensorflow >= 2.0
+* Python 3
+* CUDA >= 8.0
+* Tensorflow >= 2.0
 
 
  ## **Directions to use** ##
